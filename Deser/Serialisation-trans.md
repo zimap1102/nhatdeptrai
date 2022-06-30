@@ -40,4 +40,10 @@ POP gadget là nhiều class hoặc 1 phần của class với các đặc đi�
 
 # Ví dụ
 ## Java
-
+### Java: Binary Archive Format
+Trong Java, mỗi đối tượng có thể dc serialize nếu class của nó implements java.io.Serializable interface.
+ac ed 00 05 là signature của java object.
+readObject() là function có thể khai thác.
+Khai thác bằng cách truyền 1 object lồng nhau vào readObject(), buộc ứng dụng khởi tạo 1 chuỗi POP -> RCE. 
+POP chain  sử dụng 1 thứ tự lớp không rõ ràng. bằng cách sử dụng ** Reflection ** (cho phép tải các method hoặc ứng dụng mà k cần có kiến thức trước về class này). Hình dung:
+giả sử có 1 đối tượng nhưng không hề biết kiểu của đối tượng này và bạn muốn gọi 1 phương thức dosomething() 
