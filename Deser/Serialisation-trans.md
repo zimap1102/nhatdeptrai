@@ -46,4 +46,7 @@ ac ed 00 05 là signature của java object.
 readObject() là function có thể khai thác.
 Khai thác bằng cách truyền 1 object lồng nhau vào readObject(), buộc ứng dụng khởi tạo 1 chuỗi POP -> RCE. 
 POP chain  sử dụng 1 thứ tự lớp không rõ ràng. bằng cách sử dụng ** Reflection ** (cho phép tải các method hoặc ứng dụng mà k cần có kiến thức trước về class này). Hình dung:
-giả sử có 1 đối tượng nhưng không hề biết kiểu của đối tượng này và bạn muốn gọi 1 phương thức dosomething() 
+giả sử có 1 đối tượng nhưng không hề biết kiểu của đối tượng này và bạn muốn gọi 1 phương thức dosomething() -> reflection sẽ giúp bạn
+1 trong số class khác rất quan trọng trong việc kích hoạt RCE là `ChainedTransformer`.
+Transformer là 1 class trong java có thể lấy 1 object và trả về 1 object instance mới. <đọc code>
+partern cuối cùng LazyMap. khó hỉu quá :<
