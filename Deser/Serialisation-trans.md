@@ -50,3 +50,14 @@ giả sử có 1 đối tượng nhưng không hề biết kiểu của đối t
 1 trong số class khác rất quan trọng trong việc kích hoạt RCE là `ChainedTransformer`.
 Transformer là 1 class trong java có thể lấy 1 object và trả về 1 object instance mới. <đọc code>
 partern cuối cùng LazyMap. khó hỉu quá :<
+nghỉ tí
+skip java
+-> PHP
+Khác với Java và .net
+ php khai thác deser phụ thuộc vào việc triển khai ứng dụng.
+để hunt cần hiểu sâu về luồng ứng dụng hoạt động trong quá trình deser.
+Phải nghiên cuứ sâu về các lớp được ứng dụng thực hiện để biết liệu có tồn tại điều kiện có thể khai thác hay không.
+Magic method: là các function của API chuân được sử dụng trong OO PHP. những method này tự động được gọi nếu gặp điều kiện. 4 method hay gặp:
+* __construct(): constructor class, nằm bên trong class, tự động được gọi khi có 1 object được tạo
+* __destruct(): destructor class, được call khi 1 ocject được xóa từ bộ nhớ
+* __toString(): PHP call-back
