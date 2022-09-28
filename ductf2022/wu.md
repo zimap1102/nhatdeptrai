@@ -25,7 +25,7 @@ Your job is to bypass these restrictions and view the flag files anyway. Good lu
 
 ## Treasure Hunt
 
- ![Treasurehunt](Screenshot 2022-09-28 094235.png)
+ ![Treasurehunt](https://github.com/zimap1102/nhatdeptrai/blob/main/ductf2022/Screenshot%202022-09-28%20094235.png)
  1 bài dùng jwt token. cơ bản là login vào với token của admin => flag nằm ở phần treasure.
  dùng hashcode + wordlist rockyou để crack secretkey => onepiece. login và lấy flag.
 
